@@ -7,6 +7,26 @@
 <body>
   <header>
     <h1>New Account Application Form</h1>
+    <h2>Please fill out the entire page. Failing to do so could delay your processing time.</h2>
   </header>
+  <form action="send-email.php" method="post"> <!-- Here, "post" method means storing a little bit of information securely. method="get" is mostly for search engine submit.  -->
+    <fieldset>
+      First Name:<br>
+      <input type="text" fname="fname" size="25" maxlength="40"><br>
+      Middle Initial:<br>
+      <input type="text" minitial="minitial" size="25" maxlength="40"><br>
+      Last Name:<br>
+      <input type="text" lname="lname" size="25" maxlength="40"><br>
+      Address:<br>
+      <input type="text" address="address" size="25" maxlength="40"><br>
+      Occupation:<br>
+      <input type="text" occupation="occupation" size="25" maxlength="40"><br>
+      Employer:<br>
+      <input type="text" emp="emp" size="25" maxlength="40"><br>
+      Employer Address:<br>
+      <input type="text" empadd="empadd" size="25" maxlength="40"><br>
+      <select></select>
+    </fieldset>
+  </form>
 </body>
 </html>
