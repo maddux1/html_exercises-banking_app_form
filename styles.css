@@ -5,5 +5,23 @@ h1 {
 h2 {
    font: normal 1em/1 "Helvetica Neue", Helvetica, Artial, sans-serif;
    color: red; 
+   font-style: oblique;
 }
 
+fieldset {
+  border: 6px dotted green;
+  background-color: lightgrey;
+  padding: 5% 5% 5% 5%; 
+  max-width: 60%;
+  margin: 5%;
+}
+
+legend {
+  font-weight: bolder;
+  font-size: 1.8em;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 5%;
+}

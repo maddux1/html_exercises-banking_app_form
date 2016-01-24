@@ -11,6 +11,7 @@
   </header>
   <form action="send-email.php" method="post"> <!-- Here, "post" method means storing a little bit of information securely. method="get" is mostly for search engine submit.  -->
     <fieldset>
+    <legend>Personal info</legend>
       First Name:<br>
       <input type="text" fname="fname" size="25" maxlength="40"><br>
       Middle Initial:<br>
@@ -25,8 +26,47 @@
       <input type="text" emp="emp" size="25" maxlength="40"><br>
       Employer Address:<br>
       <input type="text" empadd="empadd" size="25" maxlength="40"><br>
-      <select></select>
+      Type of loan:<br>
     </fieldset>
+    <fieldset>
+    <legend>Type of loan</legend>
+      <select name="Type of loan">
+        <option value="commercial">Commercial</option>
+        <option value="real_estate">Real Estate</option>
+        <option value="personal">Personal</option>
+        <option value="mortgage">Mortgage</option>
+      </select><br>
+    </fieldset>
+    <fieldset>
+    <legend>Little more information</legend>
+      Requested amount of loan:<br>
+      <input type="text" amount="amount" size="25" maxlength="40"><br>
+      Length of loan:<br>
+      <input type="radio" name="loan-amount" value="5_years">
+      5 years
+      <input type="radio" name="loan-amount" value="15_years">
+      15 years
+      <input type="radio" name="loan-amount" value="30_years">
+      30 years<br>
+      Special conditions:<br>
+      <input type="checkbox" name="conditions" value="down_payment">
+      I have a down payment<br>
+      <input type="checkbox" name="conditions" value="out_of_state_res">
+      Out-of-state resident<br>
+      <input type="checkbox" name="conditions" value="married">
+      Married<br>
+      <input type="checkbox" name="conditions" value="co-sign">
+      Loan will be co-signed<br>
+      Additional comments:<br>
+      <textarea name="add'l_comments" rows="4" cols="30"></textarea><br>
+      Email address:<br>
+      <input type="text" email="email_address" size="25" maxlength="40"><br>
+      Telephone number:<br>
+      <input type="text" phone="phone_number" size="25" maxlength="40"><br>
+      LinkedIn URL:<br>
+      <input type="text" profile="linked_in" size="25" maxlength="40"><br>
+    </fieldset>
+    <input type="submit" value="submit application">
   </form>
 </body>
 </html>
