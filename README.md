@@ -18,14 +18,22 @@ These are my notes on Markdown
 -second important thing
 3. third
 
-'''
+```
 var cat = "meow";
-'''
+```
 
 >I'm a really nice 
 >blockquote
 
 [click for google](http://www.google.com)
 
-![cat pic]()
+![cat pic](https://raw.githubusercontent.com/madduxTim/htmlExercisesBankingAppForm/master/screenshots/burrito.jpg)
 
+### How to run: 
+```
+http-server -p 8888
+```
+This will show at: 
+`http://localhost:8888
+`
+You will always want a description and how to get it to run.
